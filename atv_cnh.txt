@@ -1,0 +1,27 @@
+﻿cnh = str 
+veiculopeso = 6000
+veiculopeso = int
+
+
+veiculopeso= int (input ('Olá, para escolher a melhor habilitação digite o peso bruto em quilogramas do veículo. '))
+
+
+if veiculopeso > 6000:
+
+
+            print ('Escolha categoria E: Para veículos com quatro rodas ou mais e com mais de 6000 kg')
+
+
+else:
+
+
+    print ('Escolha categoria A: Para veículos com duas ou três rodas.')
+
+
+    print ('Escolha categoria B: Para veículos com quatro rodas, que acomodam até oito pessoas e seu peso é de até 3500 kg.')
+
+
+    print ('Escolha categoria C: Para veículos com quatro rodas ou mais e com peso entre 3500 e 6000 kg.')
+
+
+    print ('Escolha categoria D: Para Veículos com quatro rodas ou mais e que acomodam mais de oito pessoas.')

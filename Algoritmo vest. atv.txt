@@ -1,0 +1,154 @@
+﻿Algoritmo “Resultado Vestibular”
+
+
+Var
+
+
+qtdAlunos, contAluno, contTurma: inteiro
+
+
+notaDigitada, maior, menor, media: real
+
+
+nomeAluno, opcao, listao:: caracter
+
+
+aprovadosA, aprovadosB, aprovadosC, aprovadosD: inteiro
+
+
+ i: inteiro
+ 
+Inicio
+
+
+qtdAlunos:=0
+
+
+enquanto nomeAluno <>("0") faca
+
+
+escreva ("Digite o nome do aluno: ")
+leia (nomeAluno)
+
+
+fimenquanto
+
+
+para contTurma de 1 ate 4 faca
+
+
+escolha contTurma
+
+
+caso 1
+opcao <- "A"
+caso 2
+opcao <- "B"
+caso 3
+opcao <- "C"
+caso 4
+opcao <- "D"
+                                                      
+fimescolha
+
+
+      escreval("")
+      escreval("######################")
+      
+escreval("Digite turma: ", opcao)
+
+
+para contAluno de 1 ate 10 faca
+
+
+escrevaL("")
+
+
+escrevaL("Aluno ", contAluno:1)
+
+
+escreva ("Nome: ")
+
+
+ALEATORIO ON
+
+
+ lista "vestibular"
+
+
+leia(nomeAluno)
+
+
+escreva ("Nota: " )
+
+
+ALEATORIO 1,10
+
+
+leia(notaDigitada)
+
+
+ALEATORIO OFF
+
+
+se ( notaDigitada >= 7) entao
+
+
+escreval(" Aprovado")
+
+
+escolha opcao
+
+
+         caso "A"
+               aprovadosA <- aprovadosA+1
+
+
+            caso "B"
+               aprovadosB <- aprovadosB+1
+
+
+            caso "C"
+               aprovadosC <- aprovadosC+1
+
+
+            caso "D"
+               aprovadosD <- aprovadosD+1
+
+
+                             fimescolha
+
+
+senao
+
+
+              escreval("Reprovado")
+
+
+                         fimse
+
+
+                      fimpara
+      
+maior := notaDigitada[i]
+      
+      para contTurma de 2 até 10 faca
+      
+      se notaDigitada [i] > maior entao
+
+
+      maior := notaDigitada[i]
+
+
+              fimse
+      
+                     fimpara
+    
+ escreval("")
+ 
+escreval ("A maior nota da turma é:" , maior)
+        
+ fimpara
+
+
+Fimalgoritmo
